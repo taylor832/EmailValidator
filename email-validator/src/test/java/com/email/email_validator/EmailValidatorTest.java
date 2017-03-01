@@ -31,10 +31,7 @@ public class EmailValidatorTest
     /**
      * Rigourous Test :-)
      */
-    public void testApp()
-    {
-        assertTrue( true );
-    }
+   
     public void testValidate(){
     	assertTrue(EmailValidator.Validate("taylor.lundy@live.ca"));
     	assertTrue(EmailValidator.Validate("taylor.lundy.27@live.ca"));
