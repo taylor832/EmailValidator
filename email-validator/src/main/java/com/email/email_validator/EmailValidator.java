@@ -6,7 +6,7 @@ import java.util.regex.*;
  */
 public class EmailValidator 
 {
-    public void Validate(String email){
-    		
+    public static boolean Validate(String email){
+    		return true;
     }
 }
