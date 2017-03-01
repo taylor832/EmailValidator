@@ -35,4 +35,13 @@ public class EmailValidatorTest
     {
         assertTrue( true );
     }
+    public void testValidate(){
+    	assertTrue(EmailValidator.validate("taylor.lundy@live.ca"));
+    	assertTrue(EmailValidator.validate("taylor.lundy.27@live.ca"));
+    	assertTrue(EmailValidator.validate("tayllundy27@live.ca"));
+    	assertFalse(EmailValidator.validate("taylorlundy@liveca"));
+    	assertFalse(EmailValidator.validate("taylor.lundy.27live.ca"));
+    	assertFalse(EmailValidator.validate("tayllundy27liveca"));
+    }
+    
 }
