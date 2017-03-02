@@ -40,5 +40,11 @@ public class EmailValidatorTest
     	assertFalse(EmailValidator.Validate("taylor.lundy.27live.ca"));
     	assertFalse(EmailValidator.Validate("tayllundy27liveca"));
     }
+    //Tests for additional rules domain cannot start with a hyphen and domain cannot contain characters [!@#$%^&*()]
+    public void testValidateTask2(){
+    	assertFalse(EmailValidator.Validate("taylorlundy@-live.ca"));
+    	assertFalse(EmailValidator.Validate("taylor.lundy@$$$.ca"));
+    	assertFalse(EmailValidator.Validate("tayllundy27@l***ve.ca"));	
+    }
     
 }
